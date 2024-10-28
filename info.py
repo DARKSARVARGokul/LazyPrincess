@@ -62,7 +62,7 @@ UPI_ID = environ.get('UPI_ID', '9746380468@ybl') #enter your upi id here - grab 
 
 # Others
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/CINEMACCBOTUPDATES') # Tutorial video link for opening shortlink website 
-IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', False))
+IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'CINEMACCBOTDISCUSSION')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "False")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
@@ -91,7 +91,7 @@ LAZY_YT_HANDLE = environ.get('LAZY_YT_HANDLE','DMWITHGOKUL')  # WITHOUT @ [  add
 MOVIE_GROUP_USERNAME = environ.get('MOVIE_GROUP_USERNAME', "DARKSARVAR1") #[ without @ ]
 
 # Url Shortner
-URL_MODE = is_enabled((environ.get("URL_MODE","True")), True) # make it true to enable url shortner in groups or pm
+URL_MODE = is_enabled((environ.get("URL_MODE","False")), False) # make it true to enable url shortner in groups or pm
 URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'ez4short.com') #Always use website url from api section 
 URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '12c1b7b0fa5019632bc40c99a8aef7ab195f02ac')
 lazy_groups = environ.get('LAZY_GROUPS','')
