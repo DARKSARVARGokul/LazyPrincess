@@ -58,7 +58,7 @@ LAZY_RENAMERS = (lazy_renamers + ADMINS) if lazy_renamers else [] #Add user id o
 LZURL_PRIME_USERS = [int(lazyurlers) if id_pattern.search(lazyurlers) else lazyurlers for lazyurlers in environ.get('LZURL_PRIME_USERS', '5965340120').split()]
 
 QR_CODE_IMG = environ.get('QR_CODE_IMG','https://telegra.ph/file/ca18e2c794f4ea1c3135b.jpg') #add url link of your qr code to recieve money - use telegraph bot or other source to get image
-UPI_ID = environ.get('UPI_ID', 'lazydeveloper@ybl') #enter your upi id here - grab it from your online payment methods.
+UPI_ID = environ.get('UPI_ID', '9746380468@ybl') #enter your upi id here - grab it from your online payment methods.
 
 # Others
 TUTORIAL = environ.get('TUTORIAL', 'https://t.me/CINEMACCBOTUPDATES') # Tutorial video link for opening shortlink website 
@@ -91,7 +91,7 @@ LAZY_YT_HANDLE = environ.get('LAZY_YT_HANDLE','DMWITHGOKUL')  # WITHOUT @ [  add
 MOVIE_GROUP_USERNAME = environ.get('MOVIE_GROUP_USERNAME', "DARKSARVAR1") #[ without @ ]
 
 # Url Shortner
-URL_MODE = is_enabled((environ.get("URL_MODE","False")), False) # make it true to enable url shortner in groups or pm
+URL_MODE = is_enabled((environ.get("URL_MODE","True")), True) # make it true to enable url shortner in groups or pm
 URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'ez4short.com') #Always use website url from api section 
 URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '12c1b7b0fa5019632bc40c99a8aef7ab195f02ac')
 lazy_groups = environ.get('LAZY_GROUPS','')
