@@ -91,7 +91,7 @@ LAZY_YT_HANDLE = environ.get('LAZY_YT_HANDLE','DMWITHGOKUL')  # WITHOUT @ [  add
 MOVIE_GROUP_USERNAME = environ.get('MOVIE_GROUP_USERNAME', "DARKSARVAR1") #[ without @ ]
 
 # Url Shortner
-URL_MODE = is_enabled((environ.get("URL_MODE","True")), False) # make it true to enable url shortner in groups or pm
+URL_MODE = is_enabled((environ.get("URL_MODE","True")), True) # make it true to enable url shortner in groups or pm
 URL_SHORTENR_WEBSITE = environ.get('URL_SHORTENR_WEBSITE', 'omegalinks.in') #Always use website url from api section 
 URL_SHORTNER_WEBSITE_API = environ.get('URL_SHORTNER_WEBSITE_API', '9ea490b27994496c5d3e6250e36cab8df0c50679')
 lazy_groups = environ.get('LAZY_GROUPS','-1002223220917')
